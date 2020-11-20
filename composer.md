@@ -12,13 +12,13 @@ This tutorial illustrates how to automate a data pipeline with AWS S3, GCS and B
 * BigQuery, Cloud Storage API enabled
 * BigQuery dataset is created
 
-## 0. Setup Amazon Web Services
+## 1. Setup Amazon Web Services
 
 * Create a service account in AWS with the required permissions by creating a new local user account and enable AWS Programmatic Access
 * Asssign AWS S3 ReadOnly Access (or less retrictive access)
 * Create a S3 bucket with some [parquet files](https://github.com/Teradata/kylo/tree/master/samples/sample-data/parquet)
 
-## 0. Setup Google Cloud
+## 2. Setup Google Cloud
 
 ### Create Cloud Composer environment 
 
@@ -55,7 +55,7 @@ Apache Airflow --> Admin --> Connections --> Edit "aws_default"
 - Edit locally the file s3_to_gcs_to_bq_demo_for_git.py with the right variables
 - Upload the s3_to_gcs_to_bq_demo_for_git.py to the DAG folder
 
-## 0. Execution
+## 3. Execution
 
 - Click on "s3_to_gcs_to_bq_demo" DAG (refresh if necessary)
 - Trigger the workflow by clicking on Trigger DAG --> Trigger (no configuration JSON)
