@@ -15,7 +15,8 @@ This example illustrates how to:
 | gsutil | gsutil is a Python application that lets you access Cloud Storage from the command line. 
 | Cloud Composer | A managed workflow orchestration service built on Apache Airflow.
 | BigQuery | BigQuery is a fully-managed, serverless data warehouse that enables scalable analysis over petabytes of data. It is a Platform as a Service that supports querying using ANSI SQL.
-| S3 | Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage through a web service interface.
+| S3 | Amazon Simple Storage Service is an Object Storage service, often used in Data Lake architecture
+| GCS | Google Cloud Storage is an Object Storage service, often used in Data Lake architecture
 
 
 ## 1. Prerequisite
