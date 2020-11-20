@@ -41,7 +41,10 @@ Create environment with following parameters for your environment:
 - Zone: us-central1-a
 
 Alternatively, you could use Cloud Shell (or SDK) to automate the provisioning:
-``` gcloud composer environments create my-composer --location us-central1 --zone us-central1-a ```
+```
+gcloud composer environments create my-composer --location us-central1 --zone us-central1-a
+```
+
 
 ### Configure the prerequisites
 
