@@ -24,12 +24,12 @@ This tutorial illustrates how to automate a data pipeline with AWS S3, GCS and B
 
 Open Composer service in the left navigation menu (or search bar):
 Create environment with following parameters for your environment:
-- Name: composer-s3
+- Name: my-composer
 - Location: us-central1
 - Zone: us-central1-a
 
 Alternatively, you could use Cloud Shell (or SDK) to automate the provisioning:
-``` gcloud composer environments create my-composer-environment --location us-central1 --zone us-central1-a ```
+``` gcloud composer environments create my-composer --location us-central1 --zone us-central1-a ```
 
 ### Configure the prerequisites
 
@@ -52,8 +52,8 @@ Apache Airflow --> Admin --> Connections --> Edit "aws_default"
 
 ### Customize and apply the DAG
 
-- Edit locally the file s3_to_gcs_to_bq_demo_for_git.py with the right variables
-- Upload the s3_to_gcs_to_bq_demo_for_git.py to the DAG folder
+- Edit locally the file [s3_to_gcs_to_bq_demo_for_git.py](https://github.com/mbettan/lake-s3-gcp/blob/main/s3_to_gcs_to_bq_demo_for_git.py) with the right variables
+- Upload the [s3_to_gcs_to_bq_demo_for_git.py](https://github.com/mbettan/lake-s3-gcp/blob/main/s3_to_gcs_to_bq_demo_for_git.py) to the DAG folder
 
 ## 3. Execution
 
