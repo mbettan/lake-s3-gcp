@@ -1,6 +1,8 @@
 # Cloud Composer: S3 to GCS. GCS to BQ
 
-This tutorial illustrates how to automate a data pipeline with AWS S3, GCS and BQ
+This tutorial illustrates how to automate a data pipeline with AWS S3, GCS and BQ. Cloud Composer is a  managed workflow orchestration service that empowers you to author, schedule, and monitor pipelines that span across clouds and on-premises data centers. Built on the popular Apache Airflow open source project and operated using the Python programming language, Cloud Composer is free from lock-in and easy to use. Apache Airflow is an open source tool used to programatically author, schedule, and monitor workflows. 
+-  DAG - a DAG (Directed Acyclic Graph) is a collection of organized tasks that you schedule and run. DAGs, also called workflows, are defined in standard Python files
+- Operator - an Operator describes a single task in a workflow
 
 ## 0. Prerequisite
 
@@ -8,7 +10,7 @@ This tutorial illustrates how to automate a data pipeline with AWS S3, GCS and B
 * A [AWS Account](https://aws.amazon.com/) linked with a payment account
 * Some [parquet files](https://github.com/Teradata/kylo/tree/master/samples/sample-data/parquet) as example for the source
 * BigQuery, Cloud Storage API enabled
-* BigQuery dataset is created 
+* BigQuery dataset is created
 
 ## 0. Setup Amazon Web Services
 
@@ -18,15 +20,47 @@ This tutorial illustrates how to automate a data pipeline with AWS S3, GCS and B
 
 ## 0. Setup Google Cloud
 
-* Provision Cloud Composer cluster 
-* Enable the prerequisites
-* Customize the DAG to your environment
-* Upload the DAG into the DAG folders
+### Create Cloud Composer environment 
+
+Open Composer service in the left navigation menu (or search bar):
+Create environment with following parameters for your environment:
+- Name: composer-s3
+- Location: us-central1
+- Zone: us-central1-a
+
+Alternatively, you could use Cloud Shell (or SDK) to automate the provisioning:
+``` gcloud composer environments create my-composer-environment --location us-central1 --zone us-central1-a ```
+
+### Configure the prerequisites
+
+GCP environment --> PyPI packages --> Edit
+
+| Package name      | Extras and version | 
+|-----------|-------------|
+| boto3 | |
+| botocore | |
+
+### Configure the connectors
+
+Apache Airflow --> Admin --> Connections --> Edit "aws_default"
+
+| Entity     | Value | 
+|-----------|-------------|
+| Conn Id  | aws_default |
+| Conn Type  | Amazon Web Service |
+| Extra  | {"aws_access_key_id":"XXXXXX", "aws_secret_access_key": "XXXXXX"} |
+
+### Customize and apply the DAG
+
+- Edit locally the file s3_to_gcs_to_bq_demo_for_git.py with the right variables
+- Upload the s3_to_gcs_to_bq_demo_for_git.py to the DAG folder
 
 ## 0. Execution
 
-* Trigger the workflow in Cloud Composer
-* Check the results in GCS and BigQuery
+- Click on "s3_to_gcs_to_bq_demo" DAG (refresh if necessary)
+- Trigger the workflow by clicking on Trigger DAG --> Trigger (no configuration JSON)
+- Check the workflow success in Cloud Composer
+- Check the results in GCS and BigQuery
 
 
 
