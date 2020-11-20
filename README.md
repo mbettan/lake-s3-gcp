@@ -28,6 +28,6 @@ This example illustrates how to:
 ## 2. Implementation
 
 * [gsutil - S3 to GCS](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) 
-* [Cloud Composer: S3 to GCS. GCS to BQ](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)
+* [Cloud Composer: S3 to GCS. GCS to BQ](https://github.com/mbettan/lake-s3-gcp/blob/main/composer.md)
 * [Storage Transfer Service (STS) - S3 to GCS](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)
 * [BQ Data Transfer Service (DTS) -  S3 to BQ](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)
