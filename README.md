@@ -29,5 +29,5 @@ This example illustrates how to:
 
 * [gsutil - S3 to GCS](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) 
 * [Cloud Composer: S3 to GCS. GCS to BQ](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)
-* [Storage Transfer Service (STS) - S3 to GCS](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) linked with a billing account (e.g., Free credits)
-* [BQ Data Transfer Service (DTS) -  S3 to BQ](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) linked with a billing account (e.g., Free credits)
+* [Storage Transfer Service (STS) - S3 to GCS](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)
+* [BQ Data Transfer Service (DTS) -  S3 to BQ](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)
