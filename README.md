@@ -6,6 +6,17 @@ This example illustrates how to:
 * Transfer files from S3 --> GCS (Cloud Storage) or S3 --> BigQuery (BQ)
 * Automate the data pipeline with Cloud Composer (Apache Airflow)
 
+# 0. Definition
+
+| Name | Description | 
+|------|-------------|
+| BQ DTS | BigQuery Data Transfer Service automates data movement into BigQuery on a scheduled, managed basis. Your analytics team can lay the foundation for a BigQuery data warehouse without writing a single line of code.
+| BQ DTS | BigQuery Data Transfer Service automates data movement into BigQuery on a scheduled, managed basis. Your analytics team can lay the foundation for a BigQuery data warehouse without writing a single line of code.
+| BQ DTS | BigQuery Data Transfer Service automates data movement into BigQuery on a scheduled, managed basis. Your analytics team can lay the foundation for a BigQuery data warehouse without writing a single line of code.
+
+
+
+
 # 0. Prerequisite
 
 * A [GCP Project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) linked with a billing account (e.g., Free credits)
