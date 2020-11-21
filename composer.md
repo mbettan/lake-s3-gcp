@@ -79,7 +79,7 @@ Apache Airflow --> Admin --> Connections --> Edit "aws_default"
 - Edit locally the file [s3_to_gcs_to_bq_demo_for_git.py](https://github.com/mbettan/lake-s3-gcp/blob/main/s3_to_gcs_to_bq_demo_for_git.py) with the right variables
 - Upload the [s3_to_gcs_to_bq_demo_for_git.py](https://github.com/mbettan/lake-s3-gcp/blob/main/s3_to_gcs_to_bq_demo_for_git.py) to the DAG folder
 
-## 3. Execution
+## 3. Implementation
 
 - Click on "s3_to_gcs_to_bq_demo" DAG (refresh if necessary)
 - Trigger the workflow by clicking on Trigger DAG --> Trigger (no configuration JSON)
