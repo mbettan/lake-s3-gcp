@@ -21,9 +21,9 @@ This example illustrates how to:
 
 ## 1. Prerequisite
 
-* A [GCP Project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) linked with a billing account (e.g., Free credits)
+* A [GCP Project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project) linked with a billing account (e.g., [Free credits](https://cloud.google.com/free/docs/gcp-free-tier))
 * A [AWS Account](https://aws.amazon.com/) linked with a payment account
-* Some [parquet files](https://github.com/Teradata/kylo/tree/master/samples/sample-data/parquet) as example for the source
+* Some parquet files to transfer. Some [parquet example in this repository](https://github.com/Teradata/kylo/tree/master/samples/sample-data/parquet)
 
 ## 2. Implementation
 
