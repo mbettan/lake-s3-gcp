@@ -44,6 +44,15 @@ Alternatively, you could use Cloud Shell (or SDK) to automate the provisioning:
 ```
 gcloud composer environments create my-composer --location us-central1 --zone us-central1-a
 ```
+### Provide permission to the Service Account
+
+Provide to the Compute Engine default service account, configured in the previous step as service account for Cloud Composer environment, the permissions to interact with BigQuery and Cloud Storage:
+
+- IAM & Admin --> IAM --> ADD
+
+| Member      | Role | 
+|-----------|-------------|
+| project@compute.gserviceaccount.com | BigQuery Admin (or less restrictive) |
 
 
 ### Configure the prerequisites
