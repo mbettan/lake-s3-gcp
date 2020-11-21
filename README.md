@@ -3,7 +3,7 @@
 This project illustrates how to automate a Lake-driven architecture with AWS S3 and Google Cloud (GCS, BigQuery, Composer, etc.)
 
 This example illustrates how to:
-* Transfer files from S3 --> GCS (Cloud Storage) or S3 --> BigQuery (BQ)
+* Ingest parquet files from S3 --> GCS (Cloud Storage) or S3 --> BigQuery (BQ)
 * Automate the data pipeline with Cloud Composer (Apache Airflow)
 
 ## 0. Definition
